@@ -14,6 +14,13 @@ public class _ArrayList {
         list.add(1);
         list.add(1);
         list.add(1); // 每次扩容一倍
+        list.add(1, 2);
+        ArrayList<Integer> clone = (ArrayList<Integer>) list.clone();
+        // ArrayList可以被克隆
+        for (Integer integer : clone) {
+            System.out.println(integer);
+        }
+
         // Integer[] array = (Integer[]) list.toArray(); 报错
 //        Integer[] array = list.toArray(new Integer[0]);
 //        for (Integer integer : array) {
