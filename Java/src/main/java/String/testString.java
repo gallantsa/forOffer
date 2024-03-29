@@ -27,5 +27,22 @@ public class testString {
         String str4 = str2.intern();
         System.out.println("str1 == str4：" + (str1 == str4)); // true
         System.out.println("str2 == str4：" + (str2 == str4)); // false
+
+        String s1 = new StringBuilder().append("ja").append("va1").toString();
+        System.out.println(s1.intern() == s1); // true
+
+        String s2 = "java1"; // 回字符串池中对象引用
+        System.out.println(s2 == s1); // true
+
+        String s3 = "ja" + "va1";
+        System.out.println(s2 == s3); // true
+
+        String s4 = "jav" + "a1";
+        System.out.println(s3 == s4); // true
+
+        String s5 = "jav";
+        String s6 = "a1";
+        String s7 = s5 + s6;
+        System.out.println(s7 == s4); // false
     }
 }
