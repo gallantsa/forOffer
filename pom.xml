@@ -12,6 +12,7 @@
         <module>Java</module>
         <module>concurrent</module>
         <module>JVM</module>
+        <module>OS</module>
     </modules>
 
     <properties>
