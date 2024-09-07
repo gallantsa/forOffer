@@ -2,7 +2,6 @@ package bitmap实现布隆过滤器;
 
 import redis.clients.jedis.Jedis;
 import java.nio.charset.StandardCharsets;
-import java.util.BitSet;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -17,6 +16,7 @@ public class RedisBloomFilter {
 
     public RedisBloomFilter() {
         this.jedis = new Jedis("localhost", 6379);
+        jedis.select(6);
         this.hashFunctions = new ArrayList<>();
         for (int seed : HASH_SEEDS) {
             hashFunctions.add(new SimpleHash(BITMAP_SIZE, seed));
