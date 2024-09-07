@@ -14,6 +14,7 @@
         <module>JVM</module>
         <module>OS</module>
         <module>DS</module>
+        <module>Redis</module>
     </modules>
 
     <properties>
