@@ -15,6 +15,7 @@
         <module>OS</module>
         <module>DS</module>
         <module>Redis</module>
+        <module>testLazy</module>
     </modules>
 
     <properties>
