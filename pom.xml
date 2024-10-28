@@ -16,6 +16,7 @@
         <module>DS</module>
         <module>Redis</module>
         <module>testLazy</module>
+        <module>geek</module>
     </modules>
 
     <properties>
