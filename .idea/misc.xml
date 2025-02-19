@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/testTomcat/pom.xml" />
         <option value="$PROJECT_DIR$/mutilogin/pom.xml" />
+        <option value="$PROJECT_DIR$/testSPI/Client/pom.xml" />
+        <option value="$PROJECT_DIR$/testSPI/SPI/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
